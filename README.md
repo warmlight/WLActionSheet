@@ -22,12 +22,12 @@ pod 'WLActionSheet'
 
 ## Use
 ```Swift
-        let sheetCon = WLActionSheetController.init(title: "Hello", message: "Have a good day")
-        let action = WLSheetAction.init(title: "1", style: .default)
-        let action1 = WLSheetAction.init(title: "2", style: .destructive) { (action) in
+        let sheetCon = WLActionSheetController(title: "Hello", message: "Have a good day")
+        let action = WLSheetAction(title: "1", style: .default)
+        let action1 = WLSheetAction(title: "2", style: .destructive) { (action) in
             print("click")
         }
-        let action2 = WLSheetAction.init(title: "cancel", style: .cancel)
+        let action2 = WLSheetAction(title: "cancel", style: .cancel)
         
         sheetCon.addAction(action)
         sheetCon.addAction(action1)
