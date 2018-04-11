@@ -35,6 +35,7 @@ pod 'WLActionSheet'
         
         self.present(sheetCon, animated: true, completion: nil)
 ```
+![](http://lc-3xs828an.cn-n1.lcfile.com/923d7f00057a4d8c2cc1.gif)
 
 
 ## License
