@@ -21,7 +21,7 @@ pod 'WLActionSheet'
 ```
 
 ## Use
-```
+```Swift
         let sheetCon = WLActionSheetController.init(title: "Hello", message: "Have a good day")
         let action = WLSheetAction.init(title: "1", style: .default)
         let action1 = WLSheetAction.init(title: "2", style: .destructive) { (action) in
