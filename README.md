@@ -1,4 +1,5 @@
 # WLActionSheet
+<<<<<<< HEAD
 
 [![CI Status](http://img.shields.io/travis/462451377@qq.com/WLActionSheet.svg?style=flat)](https://travis-ci.org/462451377@qq.com/WLActionSheet)
 [![Version](https://img.shields.io/cocoapods/v/WLActionSheet.svg?style=flat)](http://cocoapods.org/pods/WLActionSheet)
@@ -27,3 +28,6 @@ pod 'WLActionSheet'
 ## License
 
 WLActionSheet is available under the MIT license. See the LICENSE file for more info.
+=======
+A action sheet like wechat
+>>>>>>> 9c8b082d1846e033566c3ed6bc38e1a64a308725
