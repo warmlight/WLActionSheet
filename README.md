@@ -20,9 +20,22 @@ it, simply add the following line to your Podfile:
 pod 'WLActionSheet'
 ```
 
-## Author
+## Use
+```
+        let sheetCon = WLActionSheetController.init(title: "Hello", message: "Have a good day")
+        let action = WLSheetAction.init(title: "1", style: .default)
+        let action1 = WLSheetAction.init(title: "2", style: .destructive) { (action) in
+            print("click")
+        }
+        let action2 = WLSheetAction.init(title: "cancel", style: .cancel)
+        
+        sheetCon.addAction(action)
+        sheetCon.addAction(action1)
+        sheetCon.addAction(action2)
+        
+        self.present(sheetCon, animated: true, completion: nil)
+```
 
-462451377@qq.com, yiyi.liu@guanaitong.com
 
 ## License
 
