@@ -1,0 +1,28 @@
+{
+  "name": "WLActionSheet",
+  "version": "0.1.0",
+  "summary": "A short description of WLActionSheet.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/462451377@qq.com/WLActionSheet",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "462451377@qq.com": "yiyi.liu@guanaitong.com"
+  },
+  "source": {
+    "git": "https://github.com/462451377@qq.com/WLActionSheet.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "WLActionSheet/Classes/**/*",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "SnapKit": [
+      "~> 4.0.0"
+    ]
+  }
+}

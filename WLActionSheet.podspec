@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'WLActionSheet'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of WLActionSheet.'
+  s.summary          = 'A action sheet like wechat.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,14 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+A action sheet like wechat
                        DESC
 
-  s.homepage         = 'https://github.com/462451377@qq.com/WLActionSheet'
+  s.homepage         = 'https://github.com/warmlight/WLActionSheet'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '462451377@qq.com' => 'yiyi.liu@guanaitong.com' }
-  s.source           = { :git => 'https://github.com/462451377@qq.com/WLActionSheet.git', :tag => s.version.to_s }
+  s.author           = { 'lyy' => '462451377@qq.com' }
+  s.source           = { :git => 'https://github.com/warmlight/WLActionSheet.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -37,6 +37,6 @@ TODO: Add long description of the pod here.
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit'
+   s.dependency 'SnapKit', '~> 4.0.0'
 end

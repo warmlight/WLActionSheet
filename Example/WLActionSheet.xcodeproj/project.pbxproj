@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1969CEAA38F91CB2C9310EA1 /* Pods-WLActionSheet_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLActionSheet_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLActionSheet_Example/Pods-WLActionSheet_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		34A9B127260C3E561575CCE5 /* WLActionSheet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WLActionSheet.podspec; path = ../WLActionSheet.podspec; sourceTree = "<group>"; };
+		34A9B127260C3E561575CCE5 /* WLActionSheet.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLActionSheet.podspec; path = ../WLActionSheet.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		38A59C017AC88683F0E6FD8F /* Pods_WLActionSheet_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLActionSheet_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D562D7ADA44CE3D370EFF9E /* Pods-WLActionSheet_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLActionSheet_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLActionSheet_Example/Pods-WLActionSheet_Example.release.xcconfig"; sourceTree = "<group>"; };
 		51D1CE1351D15DFB4AF1FA43 /* Pods-WLActionSheet_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLActionSheet_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLActionSheet_Tests/Pods-WLActionSheet_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,10 +43,10 @@
 		607FACE51AFB9204008FA782 /* WLActionSheet_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WLActionSheet_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9DFD9994005F6096F95A5CD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9DFD9994005F6096F95A5CD1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D7759E21B7DEBB0B0A722E05 /* Pods_WLActionSheet_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLActionSheet_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFBDD2FA2B77380B55F7A366 /* Pods-WLActionSheet_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLActionSheet_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLActionSheet_Tests/Pods-WLActionSheet_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F36660E2E068C4451EBA0902 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F36660E2E068C4451EBA0902 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,10 +271,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WLActionSheet_Example/Pods-WLActionSheet_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/WLActionSheet/WLActionSheet.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WLActionSheet.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +306,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-WLActionSheet_Tests/Pods-WLActionSheet_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
@@ -311,6 +314,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",

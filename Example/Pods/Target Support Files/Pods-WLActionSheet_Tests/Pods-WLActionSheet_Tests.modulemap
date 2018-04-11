@@ -1,0 +1,6 @@
+framework module Pods_WLActionSheet_Tests {
+  umbrella header "Pods-WLActionSheet_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
