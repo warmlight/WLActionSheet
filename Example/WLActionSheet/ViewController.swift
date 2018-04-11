@@ -21,19 +21,16 @@ class ViewController: UIViewController {
     
     @objc func showSelf() {
         
-        let sheetCon = WLActionSheetController.init(title: "bbb", message: "ccc")
-        let action = WLSheetAction.init(title: "1", style: .destructive)
-        let action1 = WLSheetAction.init(title: "2", style: .default)
-        let action2 = WLSheetAction.init(title: "cancel", style: .cancel)
-        let action3 = WLSheetAction.init(title: "111", style: .default) { (action) in
-            print("我是block")
+        let sheetCon = WLActionSheetController(title: "Hello", message: "Have a good day")
+        let action = WLSheetAction(title: "1", style: .default)
+        let action1 = WLSheetAction(title: "2", style: .destructive) { (action) in
+            print("click")
         }
+        let action2 = WLSheetAction(title: "cancel", style: .cancel)
         
         sheetCon.addAction(action)
         sheetCon.addAction(action1)
         sheetCon.addAction(action2)
-        
-        sheetCon.addAction(action3)
         
         self.present(sheetCon, animated: true, completion: nil)
     }
